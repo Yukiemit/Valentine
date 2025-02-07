@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    background: url('./sasasasasasa.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(210, 21, 21);
+    text-align: center;
+    font-family: 'Valentine', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.small-image {
+    width: 150px;  /* Adjust the size as needed */
+    height: 150px;  /* Keep the height consistent with the width */
+    margin-right: 20px;  /* Adds some space between the image and text */
+    vertical-align: middle;  /* Aligns the image with the text vertically */
+    border-radius: 50%;  /* Makes the image circular */
+}
+
+
+.container {
+    max-width: 90%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: 'Valentine', cursive;
+}
+#yes-btn {
+    background-color: #ff758c;
+    color: white;
+}
+
+#yes-btn:hover {
+    background-color: pink;
+}
+
+#no-btn {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+/* Pop-up Message */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+}
+
+.popup-image {
+    width: 100%;
+    max-width: 300px;  /* You can adjust the max width as needed */
+    margin-top: 20px;
+    border-radius: 10px;  /* Optional: Adds a smooth border radius */
+}
+
+
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
